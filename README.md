@@ -1,4 +1,4 @@
-# Weather-Map app
+# Weather-Map
 
 An app that allows the user to search for a city and returns the map and the average weather for the next 30 days.
 
