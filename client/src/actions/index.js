@@ -2,7 +2,7 @@ import axios from 'axios' // library for making ajax reqs
 import { FETCH_WEATHER } from './types'
 
 const API_KEY = '179563e89dc6a833d10f15d7216a7336'
-const ROOT_URL = `http://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`
+const ROOT_URL = `https://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`
 
 // we are going to be making an action creator that will be responsible for creating 
 //  an ajax request
