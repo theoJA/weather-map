@@ -2,7 +2,7 @@ const express = require("express");
 const path = require('path');
 const app = express();
 
-app.set("port", process.env.PORT || 3001);
+// app.set("port", process.env.PORT || 8080);
 
 // Express only serves static assets in production
 // if (process.env.NODE_ENV === "production") {
@@ -22,7 +22,7 @@ app.get('*', (req, res) => {
 //   console.log(`Find the server at: http://localhost:${app.get("port")}/`); // eslint-disable-line no-console
 // });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 app.listen(port);
 
 console.log(`Server started on ${port}`);
