@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require('path');
+const cors = require('cors');
 const app = express();
 
 // app.set("port", process.env.PORT || 8080);
@@ -8,6 +9,8 @@ const app = express();
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("client/build"));
 // }
+
+app.use(cors());
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
